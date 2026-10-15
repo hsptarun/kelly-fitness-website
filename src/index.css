@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: 'Barlow Condensed', sans-serif;
+  --font-sans: 'Plus Jakarta Sans', sans-serif;
+  --color-ivory: #FAF7F2;
+  --color-ivory-surface: #F4EFEA;
+  --color-ivory-border: #E8E1D7;
+  --color-plum: #2D132C;
+  --color-plum-deep: #1E0C1D;
+  --color-plum-light: #481E46;
+  --color-plum-accent: #7A2E69;
+  --color-blush: #E2CEC7;
+  --color-blush-soft: #F5EAE6;
+  --color-charcoal: #151515;
+  --color-charcoal-muted: #3B3938;
+}
+
+body {
+  font-family: var(--font-sans);
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+.font-sans {
+  font-family: var(--font-sans);
+}

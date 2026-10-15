@@ -1,0 +1,6 @@
+{
+  "name": "Kelly Fitness — Denver Personal Training & Online Coaching",
+  "description": "Editorial fitness website concept for Kelly Fitness in Denver, CO. Featuring 1-on-1 personal training, online coaching, and tailored goal planning.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
