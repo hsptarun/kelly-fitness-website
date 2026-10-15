@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { ArrowDown, ArrowRight, MapPin, Sparkles } from 'lucide-react';
+import heroImage from '../assets/images/hero_kelly_athletic_1792059081508.jpg';
 
 interface HeroProps {
   onStartJourney: () => void;
@@ -8,7 +9,6 @@ interface HeroProps {
 
 export const Hero: React.FC<HeroProps> = ({ onStartJourney, onExploreCoaching }) => {
   const [imageError, setImageError] = useState(false);
-  const heroImageSrc = '/src/assets/images/hero_kelly_athletic_1792059081508.jpg';
 
   return (
     <section className="relative overflow-hidden bg-[#FAF7F2] border-b border-[#E8E1D7] pt-8 pb-16 lg:pt-14 lg:pb-24">
@@ -96,7 +96,7 @@ export const Hero: React.FC<HeroProps> = ({ onStartJourney, onExploreCoaching })
               <div className="relative aspect-[4/5] sm:aspect-[3/4] w-full overflow-hidden bg-[#E8E1D7] border border-[#2D132C]/10 shadow-2xl">
                 {!imageError ? (
                   <img
-                    src={heroImageSrc}
+                    src={heroImage}
                     alt="Kelly Fitness Strength Coaching in Denver Studio"
                     referrerPolicy="no-referrer"
                     onError={() => setImageError(true)}

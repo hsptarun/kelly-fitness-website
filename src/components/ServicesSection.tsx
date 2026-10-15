@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import { ArrowUpRight, Check, Dumbbell, Globe, Target } from 'lucide-react';
 import type { CoachingType } from '../utils/consultation';
+import inPersonTrainingImage from '../assets/images/in_person_training_1792055698583.jpg';
+import onlineCoachingImage from '../assets/images/online_coaching_1792055700236.jpg';
+import personalizedPlanningImage from '../assets/images/personalized_planning_1792055699677.jpg';
 
 interface ServicesSectionProps {
   onSelectService: (serviceKey: CoachingType) => void;
@@ -29,7 +32,7 @@ const SERVICES: ServiceDetail[] = [
     locationTag: 'Denver, Colorado · Studio Sessions',
     description:
       'Immersive, individual coaching sessions conducted in a private training environment. Every rep, set, and tempo is actively coached to refine your form, eliminate compensations, and build unshakeable confidence under load.',
-    image: '/src/assets/images/kelly_coaching_client_1792059081972.jpg',
+    image: inPersonTrainingImage,
     imageAlt: 'Coach Kelly actively coaching a client on barbell squat form in Denver private gym',
     focusAreas: [
       'Comprehensive movement & mobility assessment',
@@ -53,7 +56,7 @@ const SERVICES: ServiceDetail[] = [
     locationTag: 'Anywhere · Fully Remote & Mobile',
     description:
       'The comprehensive guidance of a dedicated personal coach wherever you train. Custom workouts built for your specific gym setup or home equipment, paired with detailed video form reviews and weekly habit check-ins.',
-    image: '/src/assets/images/online_coaching_1792055700236.jpg',
+    image: onlineCoachingImage,
     imageAlt: 'Online fitness coaching digital dashboard and athlete gear',
     focusAreas: [
       'Customized monthly training blocks in mobile app',
@@ -77,7 +80,7 @@ const SERVICES: ServiceDetail[] = [
     locationTag: 'Custom Blueprint · Independent Execution',
     description:
       'A deeply tailored, self-directed training program engineered around your unique physiology, goals, and schedule. Includes a 1-on-1 strategy deep-dive, clear milestones, and progressive training phases to execute autonomously.',
-    image: '/src/assets/images/personalized_planning_1792055699677.jpg',
+    image: personalizedPlanningImage,
     imageAlt: 'Fitness training journal and goal planner with measuring tools',
     focusAreas: [
       'In-depth intake questionnaire & goal synthesis',

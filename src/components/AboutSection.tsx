@@ -1,5 +1,6 @@
 import React from 'react';
 import { ArrowUpRight, CheckCircle2, Instagram, ShieldCheck, HeartHandshake } from 'lucide-react';
+import coachPortrait from '../assets/images/about_coach_portrait_1792055699957.jpg';
 
 interface AboutSectionProps {
   onStartInquiry: () => void;
@@ -15,7 +16,7 @@ export const AboutSection: React.FC<AboutSectionProps> = ({ onStartInquiry }) =>
             <div className="relative mx-auto max-w-md lg:max-w-none">
               <div className="aspect-[3/4] w-full overflow-hidden bg-[#E8E1D7] border border-[#2D132C]/10 shadow-xl">
                 <img
-                  src="/src/assets/images/about_kelly_portrait_1792059081574.jpg"
+                  src={coachPortrait}
                   alt="Coach Kelly Portrait — Denver Personal Trainer & NASM Certified"
                   referrerPolicy="no-referrer"
                   className="w-full h-full object-cover object-top contrast-[1.03]"
